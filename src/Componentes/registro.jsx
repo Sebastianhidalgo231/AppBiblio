@@ -16,7 +16,7 @@ function RegUsuario() {
         <button className="btn">Registrarse</button>
       </form>
       <div className="form-section">
-        Tienes Cuenta? <Link to="/">inicia sesion</Link>
+        ¿Tienes Cuenta? <Link to="/">inicia sesion</Link>
       </div>
     </div>
   );
