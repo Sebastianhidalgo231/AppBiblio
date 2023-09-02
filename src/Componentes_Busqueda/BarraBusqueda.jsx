@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom"
 
 import { CrearTabla } from "./ProductosTabla"
 
-const productos = [
+const productos = [ //reemplazar esto con una clase Libro
     {
     titulo:"El Aleph",
     precio:"$4850",
