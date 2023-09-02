@@ -1,22 +1,23 @@
+
 .form-box {
-    max-width: 300px;
-    background: #f1f7fe;
-    overflow: hidden;
-    border-radius: 16px;
-    color: #010101;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  padding: 32px 24px 24px;
+  background: linear-gradient(270deg, #ce68d9, #45c6db, #45db79);
+  border-radius: 16px;
+  color: #010101;
+  max-width: 400px; /* Establece un ancho máximo para el formulario */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
 }
     
-      
-
-  
-  .form {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 32px 24px 24px;
-    gap: 16px;
-    text-align: center;
-  }
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
   
   /*Form text*/
   .title {
@@ -84,6 +85,5 @@
   .form button:hover {
     background-color: #005ce6;
   }
-  .title1 {
-    color: rgb(207, 246, 101);
-  }
+ 
+ 
