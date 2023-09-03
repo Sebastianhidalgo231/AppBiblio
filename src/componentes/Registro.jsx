@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './registro.css'; // Importa tus estilos CSS
+import '../hojas-de-estilo/registro.css'
 
 function RegUsuario() {  
   return (

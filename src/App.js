@@ -1,9 +1,10 @@
-
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LoginForm from './LoginForm';
-import './Form.css';
-import RegUsuario from './Componentes/registro';
-import RecuperarUsuario from './Componentes/recupero';
+import LoginForm from './componentes/LoginForm';
+import './hojas-de-estilo/Form.css';
+import RegUsuario from './componentes/Registro';
+import RecuperarUsuario from './componentes/Recupero';
+import AplicacionTareas from './componentes/AplicacionTareas';
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       <div className="app">
         <Routes>
           <Route path="/" element={<LoginForm />} />
-          <Route path="/registro" element={<RegUsuario />} />
-          <Route path="/recupero" element={<RecuperarUsuario />} />
+          <Route path="/Registro" element={<RegUsuario />} />
+          <Route path="/Recupero" element={<RecuperarUsuario />} />
+          <Route path='/AplicacionTareas' element={<AplicacionTareas />} />
         </Routes>
       </div>
     </Router>
