@@ -1,5 +1,5 @@
 import React from 'react';
-import './estilo.css'; // Importa tus estilos CSS
+import '../hojas-de-estilo/acerca.css'; 
 
 function Acerca() {
   return (

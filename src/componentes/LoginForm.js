@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import AplicacionTareas from "./AplicacionTareas";
 import "../hojas-de-estilo/Form.css";
 
 function LoginForm() {
@@ -8,7 +7,7 @@ function LoginForm() {
   const navigate = useNavigate();
 
   const manejadorLogueo = () => {
-    // Reemplazar por la logica de logueo.
+    // Reemplazar por la logica de logueo. Si uno le pone ingresar directamente, entra.
     setEstaLogueado(true);
   };
 

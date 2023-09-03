@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../hojas-de-estilo/recupero.css'; // Importa tus estilos CSS
+import '../hojas-de-estilo/recupero.css'; 
 
 function RecuperarUsuario() {
   return (

@@ -1,10 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import LoginForm from './componentes/LoginForm';
-import './hojas-de-estilo/Form.css';
+import "./App.css";
 import RegUsuario from './componentes/Registro';
 import RecuperarUsuario from './componentes/Recupero';
-import AplicacionTareas from './componentes/AplicacionTareas';
+import Acerca from './componentes/Acerca';
+import Preguntas from './componentes/Preguntas';
+import Contacto from './componentes/Contacto';
+import AplicacionTareas from './componentes/AplicacionTareas'
 
 function App() {
   return (
@@ -34,6 +37,10 @@ function App() {
           <Route path="/" element={<LoginForm />} />
           <Route path="/registro" element={<RegUsuario />} />
           <Route path="/recupero" element={<RecuperarUsuario />} />
+          <Route path="/Acerca" element={<Acerca />} />
+          <Route path="/contacto" element={<Contacto />} />
+          <Route path="/preguntas" element={<Preguntas />} />
+          <Route path='/AplicacionTareas' element={ <AplicacionTareas/> } />
         </Routes>
       </div>
     </Router>

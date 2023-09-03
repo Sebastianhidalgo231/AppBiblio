@@ -1,5 +1,5 @@
 import React from 'react';
-import './pregunta.css';
+import '../hojas-de-estilo/pregunta.css';
 
 function Preguntas  () {
     return (
