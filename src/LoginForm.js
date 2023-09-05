@@ -9,10 +9,25 @@ import './Form.css'; // Asegúrate de que la ruta sea correcta para tu archivo C
   
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [exito, setExito] = useState(false);
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      console.log(email, password);
+      setExito(true);
+    }
     console.log(email, password);
       return (
+        <>
+        {exito? (
+          <>
+            <h1>Hola!</h1>
+            <h2>Bienvenido a la aplicación</h2>
+            <Link to='/inicio'>Home</Link>
+          </>
+        ) : (
         <div className='container'>
-          <form className="form card">
+          <form className="form card" onSubmit={handleSubmit}>
             <h2 className="title"> Inicio de Sesión</h2>
             <div className="field">
               <input className="input-field" type="email" id="email" name="email" placeholder="Correo Electrónico" value={email} onChange={(e)=>setEmail(e.target.value)} />
@@ -25,15 +40,18 @@ import './Form.css'; // Asegúrate de que la ruta sea correcta para tu archivo C
             <div className="span">
             <Link className="btn-link" to="/recupero">Olvidaste tu contraseña?</Link>
             </div>
-            <Link className='btn-link' to="/inicio"><button className="btn" type="submit">Iniciar sesión </button></Link> 
+            <button className="btn" type="submit">Iniciar sesión </button>
             <div className="span">
             No tienes cuenta? <Link className="btn-link" to="/registro">Registrarse</Link>
             </div>
           </form>
         </div>
-        
-        );
-      }
+        )
+        }
+        </>
+      )
+      };
+      
     
   
   
