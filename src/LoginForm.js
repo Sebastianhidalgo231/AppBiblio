@@ -1,11 +1,12 @@
-import React , {useState}from 'react';
+import React , {useState , useContext}from 'react';
 import { Link } from 'react-router-dom';
 import './Form.css'; // Asegúrate de que la ruta sea correcta para tu archivo CSS
 
-
+import ContextoAutenticacion from './context/AuthProvider';
 
   export default function Form() {
     
+    const  setAutenticacion  = useContext(ContextoAutenticacion);
   
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
