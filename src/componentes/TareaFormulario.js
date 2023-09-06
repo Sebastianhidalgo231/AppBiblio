@@ -26,14 +26,14 @@ function TareaFormulario(props) {
             className="tarea-formulario"
             onSubmit={manejarEnvio} >
             <input 
-            className="tarea-input"
+            className="input"
             type="text"
             placeholder="Escriba una tarea"
             name="texto"
             onChange={manejarCambio}
             />
-            <button className="tarea-boton" >
-                Agregar Tarea
+            <button className="button" >
+              AGREGAR TAREA 
             </button>
         </form>
     )

@@ -1,10 +1,15 @@
 h1 {
-  color: #1b1b32;
+  background: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/noisy_net.png")
+  repeat;
+  font-family: "Open Sans", Impact;
+  color: #e7e70e;
   font-size: 25px;
-  font-family: sans-serif;
   text-align: center;
   margin: 20px 0;
+ 
 }
+
+
 
 .aplicacion-tareas {
   display: flex;
@@ -21,18 +26,14 @@ h1 {
   justify-content: center;
 }
 
-.titulo {
-  color: white;
-  font-size: 50px;
-  font-family:cursive, sans-serif;
-  text-decoration: underline;
-}
-
 .tareas-lista-principal {
   width: 600px;
   min-height: 500px;
-  background-color: #d0d0d5;
-  padding: 25px;
-  margin: 10px;
-  border-radius: 26px;
+  padding: 20px;
+  border-radius: 16px;
+  background: #64b8d4;
+  box-shadow: 12px 12px 18px #bababa,
+              -12px -12px 18px #ffffff;
+  display: flex;
+  flex-direction: column;
 }
