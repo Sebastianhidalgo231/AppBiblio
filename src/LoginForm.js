@@ -6,18 +6,20 @@ import ContextoAutenticacion from './context/AuthProvider';
 
   export default function Form() {
     
-   /* const  setAutenticacion  = useContext(ContextoAutenticacion);*/
+    const  {setAut} = useContext(ContextoAutenticacion);
   
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [exito, setExito] = useState(false);
+
+    
 
     const handleSubmit = async (e) => {
       e.preventDefault();
       console.log(email, password);
       setExito(true);
     }
-    console.log(email, password);
+    
       return (
         <>
         {exito? (
