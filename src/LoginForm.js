@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Form.css'; // Asegúrate de que la ruta sea correcta para tu archivo CSS
 
 import ContextoAutenticacion from './context/AuthProvider';
+import axios from 'axios';
 
   export default function Form() {
     
@@ -14,10 +15,25 @@ import ContextoAutenticacion from './context/AuthProvider';
 
     
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e) => {  //Uso axios con try catch y función async para cuando no sea local. Podría haber usado un fetch
       e.preventDefault();
+      try {
+          const respuesta = await axios.get('https://jsonplaceholder.typicode.com/users');
+          console.log(JSON.stringify(respuesta?.data));
+          const usuariosPermitidos = respuesta.data;
+          const buscar = usuariosPermitidos.find(e => (e.email=== email && e.name === password))
+          console.log(buscar)        
+          if (!buscar) {
+            console.log("No lo encontré")
+          } else {
+            console.log("Lo encontré")
+            setExito(true);
+          }
+      } catch (error) {
+        
+      }
       console.log(email, password);
-      setExito(true);
+      
     }
     
       return (
