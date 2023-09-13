@@ -1,29 +1,14 @@
 
-import React from "react";
+import React, { useContext } from "react";
+import ContextoAutenticacion from "./context/AuthProvider";
 
 
 //conseguir pasar la información del formulario y comprobarla
 
 export default function Verificacion() {
+    const {aut} = useContext(ContextoAutenticacion);
     
    return (
-    <h1>Prueba</h1>
-   ) 
-    
-   /* if (correo!="ezequielrudaeff@gmail.com" || pass!="123456")   
-    {
-        return (
-            <>
-                <h1>Usuario no autorizado</h1>
-            </>
-        )
-    }
-    else
-    {
-        return (
-            <>
-                <h1>Bienvenido, Ezequiel</h1>
-            </>
-        )
-    }  */
+        <h1>Hola, {aut.password}</h1>
+   )
 }

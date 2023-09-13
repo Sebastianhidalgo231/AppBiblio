@@ -6,7 +6,7 @@ import { createContext , useState } from "react";
 export const ContextoAutenticacion = createContext(); //Recibe un objeto 
 
 export const AutProvider = ({children}) => {
-    const [aut , setAut]=useState({}); {/* se corrigió [] de array por {} de objeto*/}
+    const [aut , setAut]=useState(); {/* se corrigió [] de array por {} de objeto*/}
     return (
         <ContextoAutenticacion.Provider value={{aut, setAut}}> 
             {children}

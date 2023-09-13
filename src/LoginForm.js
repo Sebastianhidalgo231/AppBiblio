@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Form.css'; // Asegúrate de que la ruta sea correcta para tu archivo CSS
 
 import ContextoAutenticacion from './context/AuthProvider';
+import Popup from './Popup';
 import axios from 'axios';
 
   export default function Form() {
@@ -12,8 +13,9 @@ import axios from 'axios';
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [exito, setExito] = useState(false);
+    const [pop , setPop]= useState(false);
 
-    
+    console.log(pop)
 
     const handleSubmit = async (e) => {  //Uso axios con try catch y función async para cuando no sea local. Podría haber usado un fetch
       e.preventDefault();
@@ -24,29 +26,31 @@ import axios from 'axios';
           const buscar = usuariosPermitidos.find(e => (e.email=== email && e.name === password))
           console.log(buscar)        
           if (!buscar) {
+            setPop(true);
             console.log("No lo encontré")
           } else {
-            console.log("Lo encontré")
             setExito(true);
+            setAut({"email": email, "password": password});
           }
       } catch (error) {
         
       }
-      console.log(email, password);
+      
       
     }
+    console.log(pop)
     
       return (
         <>
         {exito? (
           <>
-            <h1>Hola!</h1>
-            <h2>Bienvenido a la aplicación</h2>
+            <h1>Bienvenido a la aplicación</h1>
             <Link to='/inicio'>Home</Link>
           </>
         ) : (
         <div className='container'>
           <form className="form card" onSubmit={handleSubmit}>
+            <Popup visible = {pop}/>
             <h2 className="title"> Inicio de Sesión</h2>
             <div className="field">
               <input className="input-field" type="email" id="email" name="email" placeholder="Correo Electrónico" value={email} onChange={(e)=>setEmail(e.target.value)} />
