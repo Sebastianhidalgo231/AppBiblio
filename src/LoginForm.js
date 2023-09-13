@@ -17,11 +17,11 @@ class LoginForm extends React.Component {
               <svg className="input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-11c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/></svg>
             </div>
             <div className="span">
-            <Link className="btn-link" to="/recupero">Olvidaste tu contraseña?</Link>
+            <Link className="btn-link" to="/recupero">¿Olvidaste tu contraseña?</Link>
             </div>
             <button className="btn" type="submit">Iniciar sesión</button>
             <div className="span">
-            No tienes cuenta? <Link className="btn-link" to="/registro">Registrarse</Link>
+            ¿No tienes cuenta? <Link className="btn-link" to="/registro">Registrarse</Link>
             </div>
           </form>
         </div>
