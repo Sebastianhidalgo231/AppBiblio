@@ -20,10 +20,10 @@ import axios from 'axios';
     const handleSubmit = async (e) => {  //Uso axios con try catch y función async para cuando no sea local. Podría haber usado un fetch
       e.preventDefault();
       try {
-          const respuesta = await axios.get('https://jsonplaceholder.typicode.com/users');
+          const respuesta = await axios.get('https://jsonplaceholder.typicode.com/users'); //Espera para ejectuarse a obtener respuesta, por eso es async y tengo que aclararle que espere
           console.log(JSON.stringify(respuesta?.data));
-          const usuariosPermitidos = respuesta.data;
-          const buscar = usuariosPermitidos.find(e => (e.email=== email && e.name === password))
+          const usuariosPermitidos = respuesta.data; //guarda la data
+          const buscar = usuariosPermitidos.find(e => (e.email=== email && e.name === password))//Busca coincidencia
           console.log(buscar)        
           if (!buscar) {
             setPop(true);
