@@ -43,10 +43,13 @@ import axios from 'axios';
       return (
         <>
         {exito? (
-          <>
-            <h1>Bienvenido a la aplicación</h1>
-            <Link to='/inicio'>Home</Link>
-          </>
+          <div className='container'>
+            <div className='form card'>
+              <h1>Bienvenido a la aplicación</h1>
+              <Link to='/inicio'>Home</Link>
+            </div>
+              
+          </div>
         ) : (
         <div className='container'>
           <form className="form card" onSubmit={handleSubmit}>

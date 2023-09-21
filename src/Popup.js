@@ -5,7 +5,7 @@ export default function Popup({visible}) {
         <>
         {visible? (
           <>
-            <div>
+            <div className="alert">
                 <h4>Error</h4>
                 <h5>Usuario o contraseña inválidos</h5>
             </div>

@@ -92,3 +92,14 @@ body {
  }
  .span{
   color: #ffeba7}
+
+  /* Popup */
+  .alert {
+    background: rgb(255, 172, 237);
+    padding: 0.5em;
+    margin-bottom: 0.6em 1.2em;;
+    color: red;
+    border: 2px solid;
+    border-radius: 4px;
+    
+  }
