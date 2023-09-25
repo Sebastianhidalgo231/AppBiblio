@@ -1,0 +1,16 @@
+import '../App.css';
+import '../hojas-de-estilo/AplicacionLibros.css';
+import ListaDeLibros from '../componentes/ListaDeLibros';
+
+function App() {
+  return (
+    <div className='aplicacion-libros'>
+      <div className="lista-libros">
+        <h1>Lista de Libros</h1>
+        <ListaDeLibros />
+      </div>
+    </div>
+  );
+}
+
+export default App;

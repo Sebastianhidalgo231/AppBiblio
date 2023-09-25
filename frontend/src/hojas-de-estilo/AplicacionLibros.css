@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    background-image: url('https://images4.alphacoders.com/132/1326368.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Lato, sans-serif;
+    margin-top: 40px;
+    /* color: white;
+    background-color: rgb(50, 114, 210);
+    font-family: Lato, sans-serif;
+    margin-top: 40px; */
+}
+
+h1 {
+    color: #1b1b32;
+    font-size: 25px;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.aplicacion-libros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-libros {
+    width: 600px;
+    min-height: 500px;
+    background-color: rgb(255, 232, 190);
+    padding: 25px;
+    margin: 10px;
+    justify-content: center;
+    border-radius: 26px;
+}
