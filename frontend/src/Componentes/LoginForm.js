@@ -1,6 +1,10 @@
-import React from 'react';
+import React, {useState, useContext} from 'react';
 import { Link } from 'react-router-dom';
 import '../hojas-de-estilo/Form.css'; // Asegúrate de que la ruta sea correcta para tu archivo CSS
+
+import ContextoDeAutenticacion from '../contexto/AuthProvider';
+import PopUp from '../PopUp';
+
 
 class LoginForm extends React.Component {
     render() {
