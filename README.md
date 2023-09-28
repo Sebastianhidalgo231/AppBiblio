@@ -44,7 +44,7 @@ Equipo de Desarrollo y contacto
 -------------------------------------------------
 * Sebastian hidalgo                   		sebastianhidalgook@gmail.com         
 * Jonathan Ehrhorn				j.ehrhorn14@gmail.com
-* Pablo Esteban Monge Benavente			pablomonge55gmail.com
+* Pablo Esteban Monge Benavente			pablomonge55@gmail.com
 * Walter Palavecino				wdp.kms@gmail.com
 * Ezequiel Rudaeff Irazusta			ezequielrudaeff@gmail.com
 * Tomas Franco					tomasfranco836@gmail.com
