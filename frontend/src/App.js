@@ -8,6 +8,8 @@ import Acerca from './componentes/Acerca';
 import Preguntas from './componentes/Preguntas';
 import Contacto from './componentes/Contacto';
 import AplicacionTareas from './componentes/AplicacionTareas'
+import Resenas from './componentes/Resenas';
+
 
 function App() {
   return (
@@ -28,6 +30,9 @@ function App() {
             <li>
               <Link  className="nav" to="/contacto">Contacto</Link> 
             </li>
+            <li>
+              <Link  className="nav" to="/resenas">Reseñas</Link> 
+            </li>
           </ul>
         </nav>
         </div>
@@ -41,6 +46,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/preguntas" element={<Preguntas />} />
           <Route path='/AplicacionTareas' element={ <AplicacionTareas/> } />
+          <Route path="/Resenas" element={<Resenas />} />
         </Routes>
       </div>
     </Router>
@@ -48,5 +54,3 @@ function App() {
 }
 
 export default App;
-
-
